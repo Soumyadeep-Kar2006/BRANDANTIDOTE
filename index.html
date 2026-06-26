@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BRANDANTIDOTE | Digital Marketing & Branding Agency</title>
+  <title>BRANDANTIDOTE | Award-Winning Digital Marketing & Branding Agency</title>
   <meta name="description" content="We don't follow trends. We create them. Premium digital marketing, branding, web design, and performance advertising by BRANDANTIDOTE." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -378,7 +378,7 @@
     }
 
     .social-icon {
-      width: 40px; height: 40px;
+      width: 52px; height: 52px;
       border-radius: 50%;
       border: 1px solid rgba(0,0,0,0.06);
       display: flex;
@@ -543,6 +543,15 @@
 
     html.dark .nav-link::after { background: #fff; }
 
+    html.dark #work .bg-\[#F8F8F8\] { background: #1a1a1a !important; }
+    html.dark #work .border-black\/\[0\.04\] { border-color: rgba(255,255,255,0.06) !important; }
+    html.dark #work .bg-gradient-to-br { opacity: 0.3; }
+    html.dark #work .project-name,
+    html.dark #work .project-subtitle { color: #B30000 !important; }
+    html.dark #work .p-7 { background: #fff !important; }
+    html.dark #work .p-7 h3,
+    html.dark #work .p-7 p { color: #111 !important; }
+
     html.dark #mobile-panel { background: rgba(10, 10, 10, 0.97); border-left-color: rgba(255,255,255,0.04); }
 
     /* toggle button */
@@ -599,8 +608,10 @@
       <div class="hidden lg:flex items-center gap-8">
         <a href="#about" class="nav-link text-sm">About</a>
         <a href="#services" class="nav-link text-sm">Services</a>
+        <a href="#pricing" class="nav-link text-sm">Pricing</a>
         <a href="#work" class="nav-link text-sm">Work</a>
         <a href="#process" class="nav-link text-sm">Process</a>
+        <a href="#testimonials" class="nav-link text-sm">Testimonials</a>
         <a href="#contact" class="nav-link text-sm">Contact</a>
         <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
           <svg class="sun" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/></svg>
@@ -636,7 +647,7 @@
           <nav>
             <a href="#about" class="mobile-nav-item">About</a>
             <a href="#services" class="mobile-nav-item">Services</a>
-            <a href="#why-us" class="mobile-nav-item">Why Choose Us</a>
+            <a href="#pricing" class="mobile-nav-item">Pricing</a>
             <a href="#work" class="mobile-nav-item">Work</a>
             <a href="#process" class="mobile-nav-item">Process</a>
             <a href="#testimonials" class="mobile-nav-item">Testimonials</a>
@@ -670,7 +681,7 @@
           <div class="mb-6 reveal" style="transition-delay:0.2s;">
             <span class="inline-flex items-center gap-2 text-xs tracking-[0.2em] uppercase text-[#888]">
               <span class="w-[6px] h-[6px] rounded-full bg-[#E30613]"></span>
-              
+              Premium Digital Growth Agency
             </span>
           </div>
 
@@ -781,90 +792,120 @@
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <div class="service-card group rounded-2xl p-8 border border-black/[0.04] bg-white hover-lift sm:col-span-2 reveal" style="transition-delay:0.1s;">
-          <span class="text-2xl mb-4 block group-hover:scale-110 transition-transform duration-300">🌐</span>
-          <h3 class="text-lg font-display font-semibold text-[#111] mb-3">Website Development</h3>
-          <p class="text-sm text-[#888] leading-relaxed">Award-winning web experiences built with cutting-edge tech — fast, responsive, and conversion-optimized.</p>
+          <span class="text-2xl mb-4 block group-hover:scale-110 transition-transform duration-300">⚙️</span>
+          <h3 class="text-lg font-display font-semibold text-[#111] mb-3">Backend Web Applications</h3>
+          <p class="text-sm text-[#888] leading-relaxed">Custom backend systems, RESTful APIs, database architecture, and server-side logic built with modern frameworks for scalable performance.</p>
         </div>
         <div class="service-card group rounded-2xl p-8 border border-black/[0.04] bg-white hover-lift reveal" style="transition-delay:0.15s;">
-          <span class="text-2xl mb-4 block group-hover:scale-110 transition-transform duration-300">🔍</span>
-          <h3 class="text-lg font-display font-semibold text-[#111] mb-3">SEO</h3>
-          <p class="text-sm text-[#888] leading-relaxed">Technical SEO, content strategy, and link building to dominate search rankings in your niche.</p>
+          <span class="text-2xl mb-4 block group-hover:scale-110 transition-transform duration-300">🛒</span>
+          <h3 class="text-lg font-display font-semibold text-[#111] mb-3">E-Commerce Development</h3>
+          <p class="text-sm text-[#888] leading-relaxed">Full-featured online stores with custom checkout flows, inventory management, payment gateways, and admin dashboards.</p>
         </div>
         <div class="service-card group rounded-2xl p-8 border border-black/[0.04] bg-white hover-lift reveal" style="transition-delay:0.2s;">
-          <span class="text-2xl mb-4 block group-hover:scale-110 transition-transform duration-300">◆</span>
-          <h3 class="text-lg font-display font-semibold text-[#111] mb-3">Branding</h3>
-          <p class="text-sm text-[#888] leading-relaxed">Strategic brand architecture, visual identity, voice, and positioning that sets you apart.</p>
+          <span class="text-2xl mb-4 block group-hover:scale-110 transition-transform duration-300">📋</span>
+          <h3 class="text-lg font-display font-semibold text-[#111] mb-3">QR Ordering Systems</h3>
+          <p class="text-sm text-[#888] leading-relaxed">Digital menu and contactless ordering platforms for restaurants, cafes, and hospitality businesses with real-time order management.</p>
         </div>
         <div class="service-card group rounded-2xl p-8 border border-black/[0.04] bg-white hover-lift reveal" style="transition-delay:0.25s;">
-          <span class="text-2xl mb-4 block group-hover:scale-110 transition-transform duration-300">📱</span>
-          <h3 class="text-lg font-display font-semibold text-[#111] mb-3">Social Media Marketing</h3>
-          <p class="text-sm text-[#888] leading-relaxed">Content strategies, community management, and paid social campaigns that drive engagement.</p>
+          <span class="text-2xl mb-4 block group-hover:scale-110 transition-transform duration-300">🤖</span>
+          <h3 class="text-lg font-display font-semibold text-[#111] mb-3">Business Automations</h3>
+          <p class="text-sm text-[#888] leading-relaxed">Automated workflows, scheduled tasks, data processing pipelines, and integration bots that eliminate manual work and save hours daily.</p>
         </div>
         <div class="service-card group rounded-2xl p-8 border border-black/[0.04] bg-white hover-lift reveal" style="transition-delay:0.3s;">
-          <span class="text-2xl mb-4 block group-hover:scale-110 transition-transform duration-300">📈</span>
-          <h3 class="text-lg font-display font-semibold text-[#111] mb-3">Performance Marketing</h3>
-          <p class="text-sm text-[#888] leading-relaxed">Data-driven ad campaigns across Google, Meta, and LinkedIn optimized for maximum ROAS.</p>
+          <span class="text-2xl mb-4 block group-hover:scale-110 transition-transform duration-300">📊</span>
+          <h3 class="text-lg font-display font-semibold text-[#111] mb-3">Custom Dashboards & CRM</h3>
+          <p class="text-sm text-[#888] leading-relaxed">Tailored admin panels, client portals, analytics dashboards, and CRM systems designed around your exact business workflows.</p>
         </div>
         <div class="service-card group rounded-2xl p-8 border border-black/[0.04] bg-white hover-lift reveal" style="transition-delay:0.35s;">
-          <span class="text-2xl mb-4 block group-hover:scale-110 transition-transform duration-300">🎯</span>
-          <h3 class="text-lg font-display font-semibold text-[#111] mb-3">Lead Generation</h3>
-          <p class="text-sm text-[#888] leading-relaxed">Multi-channel lead generation systems that fill your pipeline with qualified prospects.</p>
+          <span class="text-2xl mb-4 block group-hover:scale-110 transition-transform duration-300">🔌</span>
+          <h3 class="text-lg font-display font-semibold text-[#111] mb-3">API Development & Integrations</h3>
+          <p class="text-sm text-[#888] leading-relaxed">Custom API development, third-party integrations, webhook setups, and system connectors to unify your software stack.</p>
         </div>
         <div class="service-card group rounded-2xl p-8 border border-black/[0.04] bg-white hover-lift reveal" style="transition-delay:0.4s;">
-          <span class="text-2xl mb-4 block group-hover:scale-110 transition-transform duration-300">✎</span>
-          <h3 class="text-lg font-display font-semibold text-[#111] mb-3">Content Strategy</h3>
-          <p class="text-sm text-[#888] leading-relaxed">Strategic content creation including blogs, video, and thought leadership that builds authority.</p>
+          <span class="text-2xl mb-4 block group-hover:scale-110 transition-transform duration-300">🌐</span>
+          <h3 class="text-lg font-display font-semibold text-[#111] mb-3">Website Development</h3>
+          <p class="text-sm text-[#888] leading-relaxed">Responsive, high-performance websites built with modern tech — from landing pages to multi-page platforms with CMS integration.</p>
         </div>
         <div class="service-card group rounded-2xl p-8 border border-black/[0.04] bg-white hover-lift reveal" style="transition-delay:0.45s;">
-          <span class="text-2xl mb-4 block group-hover:scale-110 transition-transform duration-300">⚡</span>
-          <h3 class="text-lg font-display font-semibold text-[#111] mb-3">Marketing Automation</h3>
-          <p class="text-sm text-[#888] leading-relaxed">Automated workflows, email sequences, and CRM integration to nurture leads at scale.</p>
+          <span class="text-2xl mb-4 block group-hover:scale-110 transition-transform duration-300">🔍</span>
+          <h3 class="text-lg font-display font-semibold text-[#111] mb-3">SEO & Digital Strategy</h3>
+          <p class="text-sm text-[#888] leading-relaxed">Technical SEO, on-page optimization, and growth strategy to ensure your web products rank and perform.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==================== WHY CHOOSE US ==================== -->
-  <section id="why-us" class="section-padding bg-[#F8F8F8] relative overflow-hidden">
+  <!-- ==================== PRICING ==================== -->
+  <section id="pricing" class="section-padding bg-[#F8F8F8] relative overflow-hidden">
     <div class="container-wide">
       <div class="max-w-2xl mb-16 reveal">
-        <span class="text-xs tracking-[0.2em] uppercase text-[#E30613] mb-5 block font-medium">Why Choose Us</span>
+        <span class="text-xs tracking-[0.2em] uppercase text-[#E30613] mb-5 block font-medium">Pricing</span>
         <h2 class="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-[1.05] tracking-[-0.03em] text-[#111]">
-          Built Different.<br />
-          <span class="text-gradient-red">Built Better.</span>
+          Plans for Every<br />
+          <span class="text-gradient-red">Growth Stage</span>
         </h2>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <div class="group bg-white rounded-2xl p-8 border border-black/[0.04] hover-lift relative reveal" style="transition-delay:0.1s;">
-          <span class="text-2xl mb-3 block text-[#E30613]">◉</span>
-          <h3 class="text-lg font-display font-semibold text-[#111] mb-3">360° Digital Solutions</h3>
-          <p class="text-sm text-[#888] leading-relaxed">From brand strategy to web development to campaign execution — everything under one roof.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white rounded-2xl p-8 border border-black/[0.04] hover-lift relative reveal" style="transition-delay:0.1s;">
+          <span class="text-xs tracking-[0.2em] uppercase text-[#E30613] font-medium mb-4 block">Starter</span>
+          <div class="mb-6">
+            <span class="text-5xl font-display font-bold text-[#111]">₹14,999</span>
+            <span class="text-[#888] text-sm">/project</span>
+          </div>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start gap-3 text-sm text-[#666]"><span class="text-[#E30613] mt-0.5">✓</span> Brand Strategy</li>
+            <li class="flex items-start gap-3 text-sm text-[#666]"><span class="text-[#E30613] mt-0.5">✓</span> Social Media Setup</li>
+            <li class="flex items-start gap-3 text-sm text-[#666]"><span class="text-[#E30613] mt-0.5">✓</span> Basic SEO Audit</li>
+            <li class="flex items-start gap-3 text-sm text-[#888]"><span class="text-[#888] mt-0.5">—</span> Performance Marketing</li>
+            <li class="flex items-start gap-3 text-sm text-[#888]"><span class="text-[#888] mt-0.5">—</span> Web Development</li>
+          </ul>
+          <a onclick="sendPlanWhatsApp('Starter', '14,999', '✓ Brand Strategy\n✓ Social Media Setup\n✓ Basic SEO Audit\n— Performance Marketing\n— Web Development')" class="block text-center px-6 py-3 rounded-full border border-[#E30613] text-sm text-[#666] hover:text-[#111] hover:border-[#C20510] transition-all duration-300 cursor-pointer">Get Started</a>
         </div>
-        <div class="group bg-white rounded-2xl p-8 border border-black/[0.04] hover-lift relative reveal" style="transition-delay:0.15s;">
-          <span class="text-2xl mb-3 block text-[#E30613]">✦</span>
-          <h3 class="text-lg font-display font-semibold text-[#111] mb-3">Personalized Support</h3>
-          <p class="text-sm text-[#888] leading-relaxed">Dedicated account manager and strategy lead for every client. Genuine partnership, not account farming.</p>
+        <div class="bg-white rounded-2xl p-8 border-2 border-[#E30613] hover-lift relative reveal" style="transition-delay:0.2s;">
+          <span class="absolute top-4 right-4 bg-[#E30613] text-white text-[10px] tracking-wider uppercase px-3 py-1 rounded-full font-medium">Popular</span>
+          <span class="text-xs tracking-[0.2em] uppercase text-[#E30613] font-medium mb-4 block">Landing Pages</span>
+          <div class="mb-6">
+            <span class="text-5xl font-display font-bold text-[#111]">₹24,999</span>
+            <span class="text-[#888] text-sm">/project</span>
+          </div>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start gap-3 text-sm text-[#666]"><span class="text-[#E30613] mt-0.5">✓</span> Custom Landing Page Design</li>
+            <li class="flex items-start gap-3 text-sm text-[#666]"><span class="text-[#E30613] mt-0.5">✓</span> Responsive Development</li>
+            <li class="flex items-start gap-3 text-sm text-[#666]"><span class="text-[#E30613] mt-0.5">✓</span> On-Page SEO</li>
+            <li class="flex items-start gap-3 text-sm text-[#666]"><span class="text-[#E30613] mt-0.5">✓</span> Technical SEO</li>
+            <li class="flex items-start gap-3 text-sm text-[#666]"><span class="text-[#E30613] mt-0.5">✓</span> Conversion Optimization</li>
+          </ul>
+          <a onclick="sendPlanWhatsApp('Landing Pages', '24,999', '✓ Custom Landing Page Design\n✓ Responsive Development\n✓ On-Page SEO\n✓ Technical SEO\n✓ Conversion Optimization')" class="block text-center px-6 py-3 rounded-full bg-[#E30613] text-white text-sm font-medium hover:bg-[#C20510] transition-all duration-300 cursor-pointer">Get Started</a>
         </div>
-        <div class="group bg-white rounded-2xl p-8 border border-black/[0.04] hover-lift relative reveal" style="transition-delay:0.2s;">
-          <span class="text-2xl mb-3 block text-[#E30613]">◆</span>
-          <h3 class="text-lg font-display font-semibold text-[#111] mb-3">Expert Team</h3>
-          <p class="text-sm text-[#888] leading-relaxed">Specialists in every vertical — branding, performance, SEO, content, and web development.</p>
+        <div class="bg-white rounded-2xl p-8 border border-black/[0.04] hover-lift relative reveal" style="transition-delay:0.3s;">
+          <span class="text-xs tracking-[0.2em] uppercase text-[#E30613] font-medium mb-4 block">Web Apps</span>
+          <div class="mb-6">
+            <span class="text-5xl font-display font-bold text-[#111]">₹39,999</span>
+            <span class="text-[#888] text-sm">/project</span>
+          </div>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start gap-3 text-sm text-[#666]"><span class="text-[#E30613] mt-0.5">✓</span> E-Commerce Development</li>
+            <li class="flex items-start gap-3 text-sm text-[#666]"><span class="text-[#E30613] mt-0.5">✓</span> QR Ordering System</li>
+            <li class="flex items-start gap-3 text-sm text-[#666]"><span class="text-[#E30613] mt-0.5">✓</span> Business Automations</li>
+            <li class="flex items-start gap-3 text-sm text-[#666]"><span class="text-[#E30613] mt-0.5">✓</span> Backend Web Apps</li>
+            <li class="flex items-start gap-3 text-sm text-[#666]"><span class="text-[#E30613] mt-0.5">✓</span> Custom Integrations</li>
+          </ul>
+          <a onclick="sendPlanWhatsApp('Web Apps', '39,999', '✓ E-Commerce Development\n✓ QR Ordering System\n✓ Business Automations\n✓ Backend Web Apps\n✓ Custom Integrations')" class="block text-center px-6 py-3 rounded-full border border-[#E30613] text-sm text-[#666] hover:text-[#111] hover:border-[#C20510] transition-all duration-300 cursor-pointer">Get Started</a>
         </div>
-        <div class="group bg-white rounded-2xl p-8 border border-black/[0.04] hover-lift relative reveal" style="transition-delay:0.25s;">
-          <span class="text-2xl mb-3 block text-[#E30613]">◈</span>
-          <h3 class="text-lg font-display font-semibold text-[#111] mb-3">Data-Driven Growth</h3>
-          <p class="text-sm text-[#888] leading-relaxed">Every decision is backed by data. We optimize every rupee toward measurable business outcomes.</p>
-        </div>
-        <div class="group bg-white rounded-2xl p-8 border border-black/[0.04] hover-lift relative reveal" style="transition-delay:0.3s;">
-          <span class="text-2xl mb-3 block text-[#E30613]">◎</span>
-          <h3 class="text-lg font-display font-semibold text-[#111] mb-3">Transparent Communication</h3>
-          <p class="text-sm text-[#888] leading-relaxed">Real-time dashboards, weekly updates, and honest reporting. No black boxes, no surprises.</p>
-        </div>
-        <div class="group bg-white rounded-2xl p-8 border border-black/[0.04] hover-lift relative reveal" style="transition-delay:0.35s;">
-          <span class="text-2xl mb-3 block text-[#E30613]">◇</span>
-          <h3 class="text-lg font-display font-semibold text-[#111] mb-3">Long-Term Partnerships</h3>
-          <p class="text-sm text-[#888] leading-relaxed">We grow with you. 95% client retention proves our commitment to lasting, measurable success.</p>
+        <div class="bg-white rounded-2xl p-8 border border-black/[0.04] hover-lift relative reveal" style="transition-delay:0.4s;">
+          <span class="text-xs tracking-[0.2em] uppercase text-[#E30613] font-medium mb-4 block">Enterprise</span>
+          <div class="mb-6">
+            <span class="text-5xl font-display font-bold text-[#111]">Custom</span>
+          </div>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start gap-3 text-sm text-[#666]"><span class="text-[#E30613] mt-0.5">✓</span> Full 360° Digital Strategy</li>
+            <li class="flex items-start gap-3 text-sm text-[#666]"><span class="text-[#E30613] mt-0.5">✓</span> Web Development</li>
+            <li class="flex items-start gap-3 text-sm text-[#666]"><span class="text-[#E30613] mt-0.5">✓</span> Dedicated Team</li>
+            <li class="flex items-start gap-3 text-sm text-[#666]"><span class="text-[#E30613] mt-0.5">✓</span> Custom Reporting</li>
+            <li class="flex items-start gap-3 text-sm text-[#666]"><span class="text-[#E30613] mt-0.5">✓</span> Priority Support</li>
+          </ul>
+          <a onclick="sendPlanWhatsApp('Enterprise', 'Custom', '✓ Full 360° Digital Strategy\n✓ Web Development\n✓ Dedicated Team\n✓ Custom Reporting\n✓ Priority Support')" class="block text-center px-6 py-3 rounded-full border border-[#E30613] text-sm text-[#666] hover:text-[#111] hover:border-[#C20510] transition-all duration-300 cursor-pointer">Contact Us</a>
         </div>
       </div>
     </div>
@@ -876,83 +917,36 @@
       <div class="max-w-2xl mb-16 reveal">
         <span class="text-xs tracking-[0.2em] uppercase text-[#E30613] mb-5 block font-medium">Portfolio</span>
         <h2 class="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-[1.05] tracking-[-0.03em] text-[#111]">
-          Results That<br />
-          <span class="text-gradient-red">Speak Volumes</span>
+          Our<br />
+          <span class="text-gradient-red">Projects</span>
         </h2>
       </div>
 
-      <div class="flex overflow-x-auto gap-6 pb-6 snap-x snap-mandatory scrollbar-hide -mx-6 md:-mx-8 lg:-mx-16 px-6 md:px-8 lg:px-16" id="case-scroll">
-        <div class="case-study-card snap-start reveal" style="transition-delay:0.15s;">
-          <div class="relative overflow-hidden rounded-2xl border border-black/[0.04] bg-white h-full group hover:shadow-lg transition-all duration-500">
-            <div class="aspect-[16/10] bg-gradient-to-br from-[#E30613]/5 to-[#FF6B6B]/5 flex items-center justify-center relative border-b border-black/[0.04]">
-              <div class="absolute inset-0 bg-white/40"></div>
-              <div class="relative z-10 text-center p-8">
-                <span class="text-7xl font-display font-bold text-[#E30613] block mb-1">340%</span>
-                <span class="text-sm text-[#888]">ROI in 6 months</span>
-              </div>
-            </div>
-            <div class="p-7">
-              <span class="text-xs tracking-wider uppercase text-[#E30613]/70 mb-2 block">Branding & Social Media</span>
-              <h3 class="text-lg font-display font-semibold text-[#111] mb-2">Luxury Fashion Label</h3>
-              <p class="text-sm text-[#888] leading-relaxed">Complete brand overhaul and social media strategy for a premium Indian fashion label, resulting in 340% ROAS and 5x engagement growth.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="relative overflow-hidden rounded-2xl border border-black/[0.04] bg-[#F8F8F8] h-full group hover:shadow-lg transition-all duration-500 reveal" style="transition-delay:0.15s;">
+          <div class="aspect-[16/10] bg-gradient-to-br from-[#E30613]/5 to-[#FF6B6B]/5 flex items-center justify-center relative border-b border-black/[0.04]">
+            <div class="relative z-10 text-center p-8">
+              <span class="text-4xl font-display font-bold block mb-2 project-name" style="color:#E30613">Project 01</span>
+              <span class="text-sm project-subtitle" style="color:#E30613">Website link coming soon</span>
             </div>
           </div>
-        </div>
-        <div class="case-study-card snap-start reveal" style="transition-delay:0.3s;">
-          <div class="relative overflow-hidden rounded-2xl border border-black/[0.04] bg-white h-full group hover:shadow-lg transition-all duration-500">
-            <div class="aspect-[16/10] bg-gradient-to-br from-[#E30613]/5 to-[#FF8C00]/5 flex items-center justify-center relative border-b border-black/[0.04]">
-              <div class="absolute inset-0 bg-white/40"></div>
-              <div class="relative z-10 text-center p-8">
-                <span class="text-7xl font-display font-bold text-[#E30613] block mb-1">180%</span>
-                <span class="text-sm text-[#888]">Revenue growth</span>
-              </div>
-            </div>
-            <div class="p-7">
-              <span class="text-xs tracking-wider uppercase text-[#E30613]/70 mb-2 block">Performance Marketing</span>
-              <h3 class="text-lg font-display font-semibold text-[#111] mb-2">B2B SaaS Platform</h3>
-              <p class="text-sm text-[#888] leading-relaxed">Scaled a B2B SaaS platform from $50k to $140k MRR through targeted LinkedIn and Google campaigns with optimized funnels.</p>
-            </div>
+          <div class="p-7">
+            <h3 class="text-lg font-display font-semibold text-[#111] mb-2">Project Title</h3>
+            <p class="text-sm text-[#888] leading-relaxed">Project description will be added here.</p>
           </div>
         </div>
-        <div class="case-study-card snap-start reveal" style="transition-delay:0.45s;">
-          <div class="relative overflow-hidden rounded-2xl border border-black/[0.04] bg-white h-full group hover:shadow-lg transition-all duration-500">
-            <div class="aspect-[16/10] bg-gradient-to-br from-[#E30613]/5 to-[#FF4D4D]/5 flex items-center justify-center relative border-b border-black/[0.04]">
-              <div class="absolute inset-0 bg-white/40"></div>
-              <div class="relative z-10 text-center p-8">
-                <span class="text-7xl font-display font-bold text-[#E30613] block mb-1">250%</span>
-                <span class="text-sm text-[#888]">Organic traffic increase</span>
-              </div>
-            </div>
-            <div class="p-7">
-              <span class="text-xs tracking-wider uppercase text-[#E30613]/70 mb-2 block">Web Design & SEO</span>
-              <h3 class="text-lg font-display font-semibold text-[#111] mb-2">D2C Beauty Brand</h3>
-              <p class="text-sm text-[#888] leading-relaxed">Redesigned e-commerce experience and executed SEO strategy that grew organic traffic by 250% and reduced bounce rate by 40%.</p>
+        <div class="relative overflow-hidden rounded-2xl border border-black/[0.04] bg-[#F8F8F8] h-full group hover:shadow-lg transition-all duration-500 reveal" style="transition-delay:0.3s;">
+          <div class="aspect-[16/10] bg-gradient-to-br from-[#E30613]/5 to-[#FF8C00]/5 flex items-center justify-center relative border-b border-black/[0.04]">
+            <div class="relative z-10 text-center p-8">
+              <span class="text-4xl font-display font-bold block mb-2 project-name" style="color:#E30613">Project 02</span>
+              <span class="text-sm project-subtitle" style="color:#E30613">Website link coming soon</span>
             </div>
           </div>
-        </div>
-        <div class="case-study-card snap-start reveal" style="transition-delay:0.6s;">
-          <div class="relative overflow-hidden rounded-2xl border border-black/[0.04] bg-white h-full group hover:shadow-lg transition-all duration-500">
-            <div class="aspect-[16/10] bg-gradient-to-br from-[#E30613]/5 to-[#FF6B6B]/5 flex items-center justify-center relative border-b border-black/[0.04]">
-              <div class="absolute inset-0 bg-white/40"></div>
-              <div class="relative z-10 text-center p-8">
-                <span class="text-7xl font-display font-bold text-[#E30613] block mb-1">500+</span>
-                <span class="text-sm text-[#888]">Qualified leads in Q1</span>
-              </div>
-            </div>
-            <div class="p-7">
-              <span class="text-xs tracking-wider uppercase text-[#E30613]/70 mb-2 block">Lead Generation</span>
-              <h3 class="text-lg font-display font-semibold text-[#111] mb-2">Real Estate Group</h3>
-              <p class="text-sm text-[#888] leading-relaxed">Built a multi-channel lead generation system combining SEO, paid ads, and automated nurturing delivering 500+ qualified leads.</p>
-            </div>
+          <div class="p-7">
+            <h3 class="text-lg font-display font-semibold text-[#111] mb-2">Project Title</h3>
+            <p class="text-sm text-[#888] leading-relaxed">Project description will be added here.</p>
           </div>
         </div>
-      </div>
-
-      <div class="text-center mt-10 reveal">
-        <a href="#contact" class="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-black/[0.1] text-sm text-[#666] hover:text-[#111] hover:border-black/[0.2] transition-all duration-300">
-          View All Case Studies
-          <span class="text-lg">→</span>
-        </a>
       </div>
     </div>
   </section>
@@ -1076,33 +1070,43 @@
       <div class="flex gap-6 w-max animate-marquee" id="testimonial-marquee">
         <div class="w-[350px] md:w-[400px] flex-shrink-0 bg-[#F8F8F8] rounded-2xl p-7 border border-black/[0.04]">
           <div class="flex gap-1 mb-4"> <svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg> </div>
-          <p class="text-sm text-[#666] leading-relaxed mb-5">&ldquo;BrandAntidote transformed our brand from an unknown label to a recognized name. Their strategic approach to branding and social media was a total game-changer for our business.&rdquo;</p>
-          <div><p class="text-sm font-semibold text-[#111]">Priya Sharma</p><p class="text-xs text-[#AAA] mt-0.5">Founder, Luxe Label India</p></div>
+          <p class="text-sm text-[#666] leading-relaxed mb-5">&ldquo;I have experienced my growth journey with BRANDANTIDOTE, will always recommend to try brandantidote for your company growth. Best in SEO, redesigning, branding.&rdquo;</p>
+          <div><p class="text-sm font-semibold text-[#111]">Kapil Yadav</p><p class="text-xs text-[#AAA] mt-0.5">Local Guide &middot; 5 reviews</p></div>
         </div>
         <div class="w-[350px] md:w-[400px] flex-shrink-0 bg-[#F8F8F8] rounded-2xl p-7 border border-black/[0.04]">
           <div class="flex gap-1 mb-4"> <svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg> </div>
-          <p class="text-sm text-[#666] leading-relaxed mb-5">&ldquo;The performance marketing team at BrandAntidote scaled our revenue by 180% in just 4 months. Their data-driven approach sets them apart from every other agency.&rdquo;</p>
-          <div><p class="text-sm font-semibold text-[#111]">Rajesh Mehta</p><p class="text-xs text-[#AAA] mt-0.5">CEO, TechVenture Solutions</p></div>
+          <p class="text-sm text-[#666] leading-relaxed mb-5">&ldquo;Good value. Thank you brand Antidote.&rdquo;</p>
+          <div><p class="text-sm font-semibold text-[#111]">Manauwar Hassan</p><p class="text-xs text-[#AAA] mt-0.5">2 reviews</p></div>
         </div>
         <div class="w-[350px] md:w-[400px] flex-shrink-0 bg-[#F8F8F8] rounded-2xl p-7 border border-black/[0.04]">
           <div class="flex gap-1 mb-4"> <svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg> </div>
-          <p class="text-sm text-[#666] leading-relaxed mb-5">&ldquo;Working with BrandAntidote felt like having a world-class in-house marketing team. Their web design and SEO work doubled our organic traffic within a single quarter.&rdquo;</p>
-          <div><p class="text-sm font-semibold text-[#111]">Ananya Gupta</p><p class="text-xs text-[#AAA] mt-0.5">CMO, D2C Beauty Co.</p></div>
+          <p class="text-sm text-[#666] leading-relaxed mb-5">&ldquo;Thanks to BRANDANTIDOTE..love their solution.&rdquo;</p>
+          <div><p class="text-sm font-semibold text-[#111]">Aman Dubey</p><p class="text-xs text-[#AAA] mt-0.5">9 reviews</p></div>
         </div>
         <div class="w-[350px] md:w-[400px] flex-shrink-0 bg-[#F8F8F8] rounded-2xl p-7 border border-black/[0.04]">
           <div class="flex gap-1 mb-4"> <svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg> </div>
-          <p class="text-sm text-[#666] leading-relaxed mb-5">&ldquo;Professional, creative, and results-driven. BrandAntidote delivered our complete digital ecosystem — from brand identity to lead generation — flawlessly.&rdquo;</p>
-          <div><p class="text-sm font-semibold text-[#111]">Vikram Singh</p><p class="text-xs text-[#AAA] mt-0.5">Director, Estate Group</p></div>
+          <p class="text-sm text-[#666] leading-relaxed mb-5">&ldquo;I was worried about my business until I came across this marketing team. In such a short span of time my business has grown exponentially.&rdquo;</p>
+          <div><p class="text-sm font-semibold text-[#111]">Vishal Kumar</p><p class="text-xs text-[#AAA] mt-0.5">3 reviews</p></div>
         </div>
         <div class="w-[350px] md:w-[400px] flex-shrink-0 bg-[#F8F8F8] rounded-2xl p-7 border border-black/[0.04]">
           <div class="flex gap-1 mb-4"> <svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg> </div>
-          <p class="text-sm text-[#666] leading-relaxed mb-5">&ldquo;The team's attention to detail and strategic thinking is unmatched. Our brand perception completely transformed after working with them.&rdquo;</p>
-          <div><p class="text-sm font-semibold text-[#111]">Neha Kapoor</p><p class="text-xs text-[#AAA] mt-0.5">Founder, Wellness Brand</p></div>
+          <p class="text-sm text-[#666] leading-relaxed mb-5">&ldquo;Hardworking and creative people. Impressed by how quickly traffic increased and my business is growing which is so pleasing.&rdquo;</p>
+          <div><p class="text-sm font-semibold text-[#111]">Aditya Pratap Singh</p><p class="text-xs text-[#AAA] mt-0.5">5 reviews</p></div>
         </div>
         <div class="w-[350px] md:w-[400px] flex-shrink-0 bg-[#F8F8F8] rounded-2xl p-7 border border-black/[0.04]">
           <div class="flex gap-1 mb-4"> <svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg> </div>
-          <p class="text-sm text-[#666] leading-relaxed mb-5">&ldquo;They don't just execute — they think. BrandAntidote challenged our assumptions and delivered a strategy that outperformed every projection.&rdquo;</p>
-          <div><p class="text-sm font-semibold text-[#111]">Arjun Nair</p><p class="text-xs text-[#AAA] mt-0.5">CEO, Fintech Startup</p></div>
+          <p class="text-sm text-[#666] leading-relaxed mb-5">&ldquo;Niceeee work! If you are looking for web developer in Kolkata, they are my topmost priority. Highly professional people.&rdquo;</p>
+          <div><p class="text-sm font-semibold text-[#111]">Bheem Sharma</p><p class="text-xs text-[#AAA] mt-0.5">2 reviews</p></div>
+        </div>
+        <div class="w-[350px] md:w-[400px] flex-shrink-0 bg-[#F8F8F8] rounded-2xl p-7 border border-black/[0.04]">
+          <div class="flex gap-1 mb-4"> <svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg></div>
+          <p class="text-sm text-[#666] leading-relaxed mb-5">&ldquo;Thanks to brand antidote for their lovely solution to grow my business.&rdquo;</p>
+          <div><p class="text-sm font-semibold text-[#111]">Neeraj Yadav</p><p class="text-xs text-[#AAA] mt-0.5">3 reviews</p></div>
+        </div>
+        <div class="w-[350px] md:w-[400px] flex-shrink-0 bg-[#F8F8F8] rounded-2xl p-7 border border-black/[0.04]">
+          <div class="flex gap-1 mb-4"> <svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-[#E30613]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg></div>
+          <p class="text-sm text-[#666] leading-relaxed mb-5">&ldquo;Best website designer and digital marketing agency.&rdquo;</p>
+          <div><p class="text-sm font-semibold text-[#111]">Sandeep Yadav</p><p class="text-xs text-[#AAA] mt-0.5">2 reviews</p></div>
         </div>
       </div>
     </div>
@@ -1166,56 +1170,55 @@
             Premium digital growth agency. We don't follow trends. We create them.
           </p>
           <div class="flex items-center gap-3 mt-6">
-            <a href="#" class="social-icon" aria-label="Instagram">In</a>
-            <a href="#" class="social-icon" aria-label="LinkedIn">Li</a>
-            <a href="#" class="social-icon" aria-label="Twitter">Tw</a>
-            <a href="#" class="social-icon" aria-label="Facebook">Fb</a>
+            <a href="https://www.instagram.com/brandantidote/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/brandantidote?mibextid=wwXIfr&rdid=3Y0gHCoiKfltmBLw&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1F2xBaQf6R%2F%3Fmibextid%3DwwXIfr" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
           </div>
         </div>
 
         <div>
           <h4 class="text-xs tracking-wider uppercase text-[#888] mb-4 font-medium">Services</h4>
           <ul class="space-y-2.5">
-            <li><a href="#services" class="text-sm text-[#AAA] hover:text-[#111] transition-colors duration-200">Web Design</a></li>
-            <li><a href="#services" class="text-sm text-[#AAA] hover:text-[#111] transition-colors duration-200">SEO</a></li>
-            <li><a href="#services" class="text-sm text-[#AAA] hover:text-[#111] transition-colors duration-200">Branding</a></li>
-            <li><a href="#services" class="text-sm text-[#AAA] hover:text-[#111] transition-colors duration-200">Social Media</a></li>
-            <li><a href="#services" class="text-sm text-[#AAA] hover:text-[#111] transition-colors duration-200">Performance Marketing</a></li>
+            <li><a href="#services" class="text-sm text-[#E30613] hover:text-[#C20510] transition-colors duration-200">Web Design</a></li>
+            <li><a href="#services" class="text-sm text-[#E30613] hover:text-[#C20510] transition-colors duration-200">SEO</a></li>
+            <li><a href="#services" class="text-sm text-[#E30613] hover:text-[#C20510] transition-colors duration-200">Branding</a></li>
+            <li><a href="#services" class="text-sm text-[#E30613] hover:text-[#C20510] transition-colors duration-200">Social Media</a></li>
+            <li><a href="#services" class="text-sm text-[#E30613] hover:text-[#C20510] transition-colors duration-200">Performance Marketing</a></li>
           </ul>
         </div>
 
         <div>
           <h4 class="text-xs tracking-wider uppercase text-[#888] mb-4 font-medium">Company</h4>
           <ul class="space-y-2.5">
-            <li><a href="#about" class="text-sm text-[#AAA] hover:text-[#111] transition-colors duration-200">About</a></li>
-            <li><a href="#work" class="text-sm text-[#AAA] hover:text-[#111] transition-colors duration-200">Work</a></li>
-            <li><a href="#process" class="text-sm text-[#AAA] hover:text-[#111] transition-colors duration-200">Process</a></li>
-            <li><a href="#contact" class="text-sm text-[#AAA] hover:text-[#111] transition-colors duration-200">Contact</a></li>
+            <li><a href="#about" class="text-sm text-[#E30613] hover:text-[#C20510] transition-colors duration-200">About</a></li>
+            <li><a href="#work" class="text-sm text-[#E30613] hover:text-[#C20510] transition-colors duration-200">Work</a></li>
+            <li><a href="#process" class="text-sm text-[#E30613] hover:text-[#C20510] transition-colors duration-200">Process</a></li>
+            <li><a href="#contact" class="text-sm text-[#E30613] hover:text-[#C20510] transition-colors duration-200">Contact</a></li>
           </ul>
         </div>
 
         <div>
           <h4 class="text-xs tracking-wider uppercase text-[#888] mb-4 font-medium">Contact</h4>
           <ul class="space-y-2.5">
-            <li><a href="mailto:brandantidote20@gmail.com" class="text-sm text-[#AAA] hover:text-[#111] transition-colors duration-200">brandantidote20@gmail.com</a></li>
-            <li><span class="text-sm text-[#AAA]">Kolkata, India</span></li>
-            <li><a href="tel:+919831344068" class="text-sm text-[#AAA] hover:text-[#111] transition-colors duration-200">+91 98313 44068</a></li>
+            <li><a href="mailto:brandantidote20@gmail.com" class="text-sm text-[#E30613] hover:text-[#C20510] transition-colors duration-200">brandantidote20@gmail.com</a></li>
+            <li><span class="text-sm text-[#E30613]">Kolkata, India</span></li>
+            <li><a href="tel:+919831344068" class="text-sm text-[#E30613] hover:text-[#C20510] transition-colors duration-200">+91 98313 44068</a></li>
           </ul>
         </div>
       </div>
 
       <div class="pt-8 border-t border-black/[0.04] flex flex-col md:flex-row items-center justify-between gap-4">
-        <p class="text-xs text-[#AAA]">&copy; 2026 BRANDANTIDOTE. All rights reserved. Built by BRANDANTIDOTE.</p>
+        <p class="text-sm text-[#111]">&copy; 2026 BRANDANTIDOTE. All rights reserved.</p>
         <div class="flex flex-col md:flex-row items-center gap-4 text-center">
-          <p class="text-xs text-[#BBB]">
-            Founder: <span class="text-[#888]">Anas Dilshad</span>
+          <p class="text-sm text-[#BBB]">
+            <span class="text-[#E30613]">Founder:</span> <span class="text-[#111] font-semibold">Anas Dilshad</span>
             <span class="hidden sm:inline"> | </span>
-            <span class="block sm:inline">Managing Partner & Growth Lead: <span class="text-[#888]">Soumyadeep Kar</span></span>
+            <span class="block sm:inline"><span class="text-[#E30613]">Managing Partner & Growth Lead:</span> <span class="text-[#111] font-semibold">Soumyadeep Kar</span></span>
           </p>
-          <div class="flex items-center gap-4">
-            <a href="#" class="text-xs text-[#AAA] hover:text-[#111] transition-colors">Privacy Policy</a>
-            <a href="#" class="text-xs text-[#AAA] hover:text-[#111] transition-colors">Terms</a>
-          </div>
+
         </div>
       </div>
     </div>
