@@ -83,6 +83,11 @@ function getFormData() {
   return { name: name, email: email, phone: phone, message: message };
 }
 
+function sendPlanWhatsApp(planName, price, features) {
+  var text = 'Hello BrandAntidote! I am interested in the ' + planName + ' plan (₹' + price + ').\n\nIncluded Features:\n' + features;
+  window.open('https://wa.me/919831344068?text=' + encodeURIComponent(text), '_blank');
+}
+
 function sendWhatsApp() {
   if (!validateForm()) return;
   var data = getFormData();
